@@ -15,6 +15,7 @@ protocol DynamicTextLayoutProtocol {
 typealias ColumnYxis = (index: Int,colY: CGFloat)
 
 class DynamicTextLayout: UICollectionViewLayout {
+    var padding: CGFloat = 20
     var delegate: DynamicTextLayoutProtocol!
     var lastY: CGFloat = 0
     private var cache = [UICollectionViewLayoutAttributes]()
@@ -40,7 +41,6 @@ class DynamicTextLayout: UICollectionViewLayout {
             return
         }
         lastY = 0
-        //if cache.isEmpty {
             
         for item in 0..<collectionView.numberOfItems(inSection: 0) {
             let indexPath = IndexPath(item: item, section: 0)
@@ -48,7 +48,7 @@ class DynamicTextLayout: UICollectionViewLayout {
             let originX: CGFloat = 0
             let originY : CGFloat = lastY
             //
-            lastY += textHeight
+            lastY += textHeight + padding
             
             let frame = CGRect(x: originX, y: originY, width: width, height: textHeight)
             
@@ -56,9 +56,7 @@ class DynamicTextLayout: UICollectionViewLayout {
             attributes.textHeight = textHeight
             attributes.frame = frame
             cache.append(attributes)
-            
         }
-        //}
     }
     
     override func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
