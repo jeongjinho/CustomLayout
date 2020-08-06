@@ -1,0 +1,14 @@
+
+{
+    "List": [
+    
+        "This version is intended exclusively for software developers to test their apps and start adopting the new technologies in iOS. Make sure to back up your device and install only on systems you are prepared to erase if necessary.",
+        
+        "This version is intended exclusively for software developers to test their apps and start adopting the new technologies in iPadOS. Make sure to back up your device and install only on systems you are prepared to erase if necessary.",
+        
+        "Beta software, including previews and seeds, refers to a version of software that is still under development and is not yet released to the public. This software is intended only for installation on development devices registered under your Apple Developer Program membership. Registered development devices can be upgraded to future beta releases and the public version of the software. Attempting to install beta software in an unauthorized manner violates Apple policy and could render your device unusable and necessitate an out of warranty repair. Make sure to back up your devices before installing beta software and install only on devices and systems that you are prepared to erase if necessary.",
+        
+        "Download the configuration profile from the download page.\nOn your iOS device: Download the configuration profile directly onto your iOS device and follow the installation instructions.",
+        "If force restarting your Apple Watch doesn’t resolve the issue, or if your Apple Watch restarts in recovery mode or exhibits other issues that require it to be restored with the current version of watchOS, you may need to send it in to Apple to be serviced. Apple Authorized Service Providers and Apple retail stores cannot perform this service. Once your device is received, it may take up to 3 business days to be serviced. You will get back the same device you sent in. This service is currently available in Australia, Canada, France, Germany, Italy, Japan, Switzerland, the United Kingdom, and the United States."
+    ]
+}
