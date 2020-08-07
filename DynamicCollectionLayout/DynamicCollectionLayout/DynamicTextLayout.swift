@@ -15,9 +15,9 @@ protocol DynamicTextLayoutProtocol {
 typealias ColumnYxis = (index: Int,colY: CGFloat)
 
 class DynamicTextLayout: UICollectionViewLayout {
-    var padding: CGFloat = 20
+    var padding: CGFloat = 0
     var delegate: DynamicTextLayoutProtocol!
-    var lastY: CGFloat = 0
+    private var lastY: CGFloat = 0
     private var cache = [UICollectionViewLayoutAttributes]()
     private var width: CGFloat {
           get {

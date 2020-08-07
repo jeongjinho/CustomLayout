@@ -19,6 +19,7 @@ class DynamicTextViewController: UIViewController {
         
         let layout = collectionView.collectionViewLayout as? DynamicTextLayout
         layout?.delegate = self
+        layout?.padding = 30
         //  layout.
     }
     
